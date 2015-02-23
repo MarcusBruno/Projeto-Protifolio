@@ -3,11 +3,12 @@
 
 /* Variaveis de Cores */
 
-$color-gray: 	#252222;
-$color-white:	#FFFFFF;
-$color-salmon:  #e2534b;
-$color-aqua:    #62b9b0;
-$color-green: 	#65ba99;
+$color-gray: 		#252222;
+$color-light-gray: 	#cdcdcd;
+$color-white:		#FFFFFF;
+$color-salmon:  	#e2534b;
+$color-aqua:    	#62b9b0;
+$color-green: 		#65ba99;
 
 /* Variaveis de Fontes */
 
@@ -218,9 +219,17 @@ display: block;
 .titleTextBio{
 	text-transform: uppercase;
 	font-weight: 700;
-	font-family: $title-article;
 	font-size: 22px;
 	margin-bottom: 22px;
+	font-family: $title-article;
 }
 	/* Fim do BOX2*/
 /*Fim do SOBRE*/
+
+/*  SEÇÃO PROJETOS */
+#main-news{
+	display: block;
+	margin:auto;
+	height: 600px; 
+	background-color: $color-light-gray;
+}
