@@ -1,28 +1,29 @@
-@import "compass/reset";
-@import "grid";
+@import "reset";
+@import "grid12";
 
-/* variables color */
-$color-gray           : #252222;
-$color-green          : #65ba99;
-$color-green-light    : #59a386;
-$color-white          : #ffffff;
-$color-grey-light     : #cdcdcd;
-$color-deep-greylight : #bebebe;
-$color-salmon         : #e2534b;
-$color-salmon-light   : #d89795;
-$color-aqua           : #62b9b0;
+/* Variaveis de Cores */
+
+$color-gray: 	#252222;
+$color-white:	#FFFFFF;
+$color-salmon:  #e2534b;
+$color-aqua:    #62b9b0;
+$color-green: 	#65ba99;
+
+/* Variaveis de Fontes */
+
+$title-section: Open Sans;
+$title-article: Yanone Kaffeesatz;
+$text-paragraphs: PT Sans;
 
 
-body {
+body{
 	font-family: 'Roboto Condensed', sans-serif;
 }
 
-
-/* main-header */
 #main-header {
-	display: block;
+display: block;
 	height: 606px;
-	background: $color-gray url(../images/main-header.jpg) no-repeat;
+	background: $color-gray url(../_images/main-header.jpg) no-repeat;
 	background-size: cover;
 	overflow: hidden;
 }
@@ -32,105 +33,194 @@ body {
 	display: block;
 	width: 502px;
 	height: 230px;
-	background: url(../images/main-sprite.png) no-repeat;
+	background: url(../_images/main-sprite.png) no-repeat;
 	background-position: -237px 0;
 	text-indent: -9999em;
 	overflow: hidden;
 	margin: 128px 0 148px 0;
 }
 
-/* main-menu */
-#main-nav {
-	display: block;
-	background: $color-gray;
+.nav_menu{
 	width: 100%;
 	height: 100px;
+	background-color: $color-gray;
+	display: block;
 }
 
-
-
-/* text-title-1 */
-.text-title-1 {
-	display: block;
-	font-size: 40px;
+.menu1{
 	line-height: 100px;
-	color: $color-white;
+	font-weight: 700;
+	font-size: 40px;
 	text-transform: uppercase;
 	text-decoration: none;
-	font-weight: 700;
+	color:$color-white;
 }
 
-/* menu-list */
-.menu-list {
+.menu2{
 	display: block;
-	list-style: none;
-
-
-	li {
+	margin-left:20px;
+	li{
 		display: block;
+		float:left;
 		position: relative;
-		float: left;
 		margin-left: 10px;
 
-		&:hover a {
-			color:$color-green;
+		&:hover a{
+			color:$color-aqua;
 		}
-
 		&:hover:before {
-			position: absolute;
 			content:"";
 			width: 50%;
 			height: 1px;
-			background: $color-green;
-			bottom: 36px;
+			background:$color-aqua;
+			position: absolute;
 			left: 25%;
+			bottom: 33px;
 		}
-	}
-
-	a {		
-		display: block;
-		font-size: 18px;
+		a{
+		display: block;	
+		font-size:18px;
+		margin: 41.5px 0;
+		text-decoration:none;
+		text-transform: uppercase; 
 		color:$color-white;
-		margin: 41px 0;
-		text-align: center;
-		text-transform: uppercase;
-		text-decoration: none;
+		}
 	}
 }
 
 
-
 /* bt-social */
-.bt-social {
+.botao {
 	display: block;
 	float: left;
 	width: 36px;
 	height: 36px;
-	background: url(../images/main-sprite.png) no-repeat;
-	overflow: hidden;
-	margin: 36px 0 0 10px;
+	background: url(../_images/main-sprite.png) no-repeat;
+	overflow: hidden; 
+	margin: 36px 0 0  10px; /*  36 de altura em relação ao nav e 10 de espaço em cada um*/
 	text-indent: -9999em;
 
 	&:hover {
 		margin-top: 30px;
-		transition: all 2;
+		transform: rotate(20deg);
+		transition:0.3s;
 	}
-
 }
 
-.ico-linkedin {
+.botao2 { // Meniu Socil -  BIO
+	display: block;
+	float: left;
+	width: 36px;
+	height: 36px;
+	background: url(../_images/main-sprite.png) no-repeat;
+	overflow: hidden; 
+	margin: 36px 0 0  10px; /*  36 de altura em relação ao nav e 10 de espaço em cada um*/
+	text-indent: -9999em;
+
+	&:hover {
+		margin-top: 30px;
+		transform: rotate(20deg);
+		transition:0.3s;
+	}
+}
+
+.linkedin {
+	background-position: 0 0; /*Posicionamento da imagem no sprit */
+	margin-left: 120px;		/*Espaçamento do primeiro elemento com o menu2*/
+}
+
+.linkedin2{
 	background-position: 0 0;
-	margin-left: 120px;
 }
 
-.ico-facebook {
-	background-position: -36px 0;
+.facebook {
+	background-position: -36px 0; /*Sempre valores negativos nos eixos.*/
 }
 
-.ico-github {
+.github {
 	background-position: -72px 0;
 }
 
-.ico-twitter {
+.twitter {
 	background-position: -108px 0;
 }
+
+/* Fim Header*/
+
+/* SEÇÃO SOBRE */
+#main-bio{
+	display: block;
+	background-color: $color-salmon;
+	margin:auto;
+	min-height: 600px; 
+}
+
+.boxControladorBio{
+	min-height: 600px;
+}
+
+	/*HEADER INTERNO ~  Estilização Título*/
+.titleBio{			
+	font-family: $title-section;
+	font-size: 48px;
+	font-weight: 600;
+	text-align: center;
+	margin:53px 0 59px 0;
+}	//FIM HEADER INTERNO
+	/*BOX 1 - SOBRE*/
+.box1{
+	display: block;
+	float: left;
+	max-height: 437px;
+}
+	/*Subtitulo*/
+.myName{
+	display: block;
+	width: 162px;
+	margin: 0 auto 36px 0;
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size:36px;
+	font-family: $title-article;
+}
+	/*Imagem*/
+.imageBio{
+	display: block;
+	width: 230px;
+	height: 230px;
+	overflow: hidden; 
+	text-indent: -9999em;
+	margin:36px auto 46px auto;
+	background: url(../_images/main-sprite.png) no-repeat;
+	background-position: 0 -36px;
+}
+	/*Controle dos Botões*/
+.boxBotaos{
+	margin-left:-20px;
+	float: left;
+}
+	/* Fim do BOX1*/
+	/*BOX 2 - SOBRE*/
+.box2{
+	display: block;
+	float:left;
+	min-height: 437px;
+}	
+	/*Estilização de Parágrafos*/
+.textBio{
+	display:block;
+	float:left;
+	margin-bottom: 20px;
+	font-weight: 500;
+	font-family:$text-paragraphs;
+}
+	/*Estilização do Subtitulo*/
+.titleTextBio{
+	text-transform: uppercase;
+	font-weight: 700;
+	font-family: $title-article;
+	font-size: 22px;
+	margin-bottom: 22px;
+}
+	/* Fim do BOX2*/
+/*Fim do SOBRE*/
