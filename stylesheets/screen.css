@@ -3,7 +3,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />*/
-/* line 5, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,45 +25,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../Ruby21-x64/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -480,22 +480,23 @@ body {
 
 /* Variaveis de Cores */
 /* Variaveis de Fontes */
-/* line 20, ../sass/screen.scss */
+/* line 25, ../sass/screen.scss */
 body {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-/* line 24, ../sass/screen.scss */
+/* line 29, ../sass/screen.scss */
 #main-header {
   display: block;
   height: 606px;
   background: #252222 url(../_images/main-header.jpg) no-repeat;
   background-size: cover;
+  border-bottom: 1px solid #D7A36B;
   overflow: hidden;
 }
 
 /* main-logo */
-/* line 33, ../sass/screen.scss */
+/* line 39, ../sass/screen.scss */
 #main-logo {
   display: block;
   width: 502px;
@@ -507,15 +508,15 @@ body {
   margin: 128px 0 148px 0;
 }
 
-/* line 44, ../sass/screen.scss */
+/* line 50, ../sass/screen.scss */
 .nav_menu {
   width: 100%;
   height: 100px;
-  background-color: #252222;
+  background-color: #275b6c;
   display: block;
 }
 
-/* line 51, ../sass/screen.scss */
+/* line 57, ../sass/screen.scss */
 .menu1 {
   line-height: 100px;
   font-weight: 700;
@@ -525,33 +526,33 @@ body {
   color: #FFFFFF;
 }
 
-/* line 60, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 .menu2 {
   display: block;
   margin-left: 20px;
 }
-/* line 63, ../sass/screen.scss */
+/* line 69, ../sass/screen.scss */
 .menu2 li {
   display: block;
   float: left;
   position: relative;
   margin-left: 10px;
 }
-/* line 69, ../sass/screen.scss */
+/* line 75, ../sass/screen.scss */
 .menu2 li:hover a {
-  color: #62b9b0;
+  color: #D7A36B;
 }
-/* line 72, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
 .menu2 li:hover:before {
   content: "";
   width: 50%;
   height: 1px;
-  background: #62b9b0;
+  background: #D7A36B;
   position: absolute;
   left: 25%;
   bottom: 33px;
 }
-/* line 81, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 .menu2 li a {
   display: block;
   font-size: 18px;
@@ -562,7 +563,7 @@ body {
 }
 
 /* bt-social */
-/* line 94, ../sass/screen.scss */
+/* line 100, ../sass/screen.scss */
 .botao {
   display: block;
   float: left;
@@ -574,14 +575,14 @@ body {
   /*  36 de altura em rela├º├úo ao nav e 10 de espa├ºo em cada um*/
   text-indent: -9999em;
 }
-/* line 104, ../sass/screen.scss */
+/* line 110, ../sass/screen.scss */
 .botao:hover {
   margin-top: 30px;
   transform: rotate(20deg);
   transition: 0.3s;
 }
 
-/* line 111, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 .botao2 {
   display: block;
   float: left;
@@ -593,14 +594,14 @@ body {
   /*  36 de altura em rela├º├úo ao nav e 10 de espa├ºo em cada um*/
   text-indent: -9999em;
 }
-/* line 121, ../sass/screen.scss */
+/* line 127, ../sass/screen.scss */
 .botao2:hover {
   margin-top: 30px;
   transform: rotate(20deg);
   transition: 0.3s;
 }
 
-/* line 128, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 .linkedin {
   background-position: 0 0;
   /*Posicionamento da imagem no sprit */
@@ -608,54 +609,56 @@ body {
   /*Espa├ºamento do primeiro elemento com o menu2*/
 }
 
-/* line 133, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 .linkedin2 {
   background-position: 0 0;
 }
 
-/* line 137, ../sass/screen.scss */
+/* line 143, ../sass/screen.scss */
 .facebook {
   background-position: -36px 0;
   /*Sempre valores negativos nos eixos.*/
 }
 
-/* line 141, ../sass/screen.scss */
+/* line 147, ../sass/screen.scss */
 .github {
   background-position: -72px 0;
 }
 
-/* line 145, ../sass/screen.scss */
+/* line 151, ../sass/screen.scss */
 .twitter {
   background-position: -108px 0;
 }
 
 /* Fim Header*/
 /* SE├ç├âO SOBRE */
-/* line 152, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
 #main-bio {
   display: block;
-  background-color: #e2534b;
+  background-color: #032B38;
   margin: auto;
   min-height: 600px;
+  border-bottom: 1px solid #D7A36B;
 }
 
-/* line 159, ../sass/screen.scss */
+/* line 166, ../sass/screen.scss */
 .boxControladorBio {
   min-height: 600px;
 }
 
 /*HEADER INTERNO ~  Estiliza├º├úo T├¡tulo*/
-/* line 164, ../sass/screen.scss */
+/* line 171, ../sass/screen.scss */
 .titleBio {
   font-family: Open Sans;
   font-size: 48px;
   font-weight: 600;
   text-align: center;
   margin: 53px 0 59px 0;
+  color: #FFFFFF;
 }
 
 /*BOX 1 - SOBRE*/
-/* line 172, ../sass/screen.scss */
+/* line 180, ../sass/screen.scss */
 .box1 {
   display: block;
   float: left;
@@ -663,19 +666,20 @@ body {
 }
 
 /*Subtitulo*/
-/* line 178, ../sass/screen.scss */
+/* line 186, ../sass/screen.scss */
 .myName {
   display: block;
   width: 162px;
   margin: 0 auto 36px 0;
   text-transform: uppercase;
+  color: #FFFFFF;
   font-weight: 600;
   font-size: 36px;
   font-family: Yanone Kaffeesatz;
 }
 
 /*Imagem*/
-/* line 188, ../sass/screen.scss */
+/* line 197, ../sass/screen.scss */
 .imageBio {
   display: block;
   width: 230px;
@@ -688,7 +692,7 @@ body {
 }
 
 /*Controle dos Bot├Áes*/
-/* line 199, ../sass/screen.scss */
+/* line 208, ../sass/screen.scss */
 .boxBotaos {
   margin-left: -20px;
   float: left;
@@ -696,7 +700,7 @@ body {
 
 /* Fim do BOX1*/
 /*BOX 2 - SOBRE*/
-/* line 205, ../sass/screen.scss */
+/* line 214, ../sass/screen.scss */
 .box2 {
   display: block;
   float: left;
@@ -704,32 +708,79 @@ body {
 }
 
 /*Estiliza├º├úo de Par├ígrafos*/
-/* line 211, ../sass/screen.scss */
+/* line 220, ../sass/screen.scss */
 .textBio {
   display: block;
   float: left;
   margin-bottom: 20px;
+  color: #FFFFFF;
   font-weight: 500;
   font-family: PT Sans;
 }
 
 /*Estiliza├º├úo do Subtitulo*/
-/* line 219, ../sass/screen.scss */
+/* line 229, ../sass/screen.scss */
 .titleTextBio {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 22px;
   margin-bottom: 22px;
+  color: #FFFFFF;
   font-family: Yanone Kaffeesatz;
 }
 
 /* Fim do BOX2*/
 /*Fim do SOBRE*/
 /*  SE├ç├âO PROJETOS */
-/* line 230, ../sass/screen.scss */
+/* line 241, ../sass/screen.scss */
 #main-news {
   display: block;
   margin: auto;
-  height: 600px;
-  background-color: #cdcdcd;
+  min-height: 600px;
+  background-color: #467687;
+  border-bottom: 1px solid #D7A36B;
+}
+
+/* line 249, ../sass/screen.scss */
+.titleNews {
+  font-family: Open Sans;
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+  margin: 53px 0 59px 0;
+}
+
+/* line 262, ../sass/screen.scss */
+.news a {
+  text-decoration: none;
+  display: block;
+  font-size: 18px;
+  margin: 41.5px 0;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+/* line 272, ../sass/screen.scss */
+.icon {
+  display: block;
+  float: left;
+  margin-right: 10px;
+  background-image: url("../_images/20.png");
+  width: 20px;
+  height: 20px;
+}
+/* line 279, ../sass/screen.scss */
+.icon:hover {
+  transform: rotate(45deg);
+  transition: 1s;
+}
+
+/* line 288, ../sass/screen.scss */
+.news a:hover .icon {
+  transform: rotate(45deg);
+  transition: 0.5s;
+}
+/* line 293, ../sass/screen.scss */
+.news a:hover p {
+  color: black;
 }

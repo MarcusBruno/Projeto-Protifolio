@@ -9,6 +9,11 @@ $color-white:		#FFFFFF;
 $color-salmon:  	#e2534b;
 $color-aqua:    	#62b9b0;
 $color-green: 		#65ba99;
+$color-blue-dark: 	#032B38;
+$color-blue-light: 	#275b6c;
+$color-white:		#FFFFFF;
+$color-blue-river:  #467687;
+$color-wood: 		#D7A36B;
 
 /* Variaveis de Fontes */
 
@@ -26,6 +31,7 @@ display: block;
 	height: 606px;
 	background: $color-gray url(../_images/main-header.jpg) no-repeat;
 	background-size: cover;
+	border-bottom: 1px solid $color-wood;
 	overflow: hidden;
 }
 
@@ -44,7 +50,7 @@ display: block;
 .nav_menu{
 	width: 100%;
 	height: 100px;
-	background-color: $color-gray;
+	background-color: $color-blue-light;
 	display: block;
 }
 
@@ -67,24 +73,24 @@ display: block;
 		margin-left: 10px;
 
 		&:hover a{
-			color:$color-aqua;
+			color:$color-wood;
 		}
 		&:hover:before {
 			content:"";
 			width: 50%;
 			height: 1px;
-			background:$color-aqua;
+			background:$color-wood;
 			position: absolute;
 			left: 25%;
 			bottom: 33px;
 		}
 		a{
-		display: block;	
-		font-size:18px;
-		margin: 41.5px 0;
-		text-decoration:none;
-		text-transform: uppercase; 
-		color:$color-white;
+			display: block;	
+			font-size:18px;
+			margin: 41.5px 0;
+			text-decoration:none;
+			text-transform: uppercase; 
+			color:$color-white;
 		}
 	}
 }
@@ -151,9 +157,10 @@ display: block;
 /* SEÇÃO SOBRE */
 #main-bio{
 	display: block;
-	background-color: $color-salmon;
+	background-color: $color-blue-dark;
 	margin:auto;
-	min-height: 600px; 
+	min-height: 600px;
+	border-bottom: 1px solid $color-wood; 
 }
 
 .boxControladorBio{
@@ -167,6 +174,7 @@ display: block;
 	font-weight: 600;
 	text-align: center;
 	margin:53px 0 59px 0;
+	color: $color-white;
 }	//FIM HEADER INTERNO
 	/*BOX 1 - SOBRE*/
 .box1{
@@ -180,6 +188,7 @@ display: block;
 	width: 162px;
 	margin: 0 auto 36px 0;
 	text-transform: uppercase;
+	color: $color-white;
 	font-weight: 600;
 	font-size:36px;
 	font-family: $title-article;
@@ -212,6 +221,7 @@ display: block;
 	display:block;
 	float:left;
 	margin-bottom: 20px;
+	color: $color-white;
 	font-weight: 500;
 	font-family:$text-paragraphs;
 }
@@ -221,6 +231,7 @@ display: block;
 	font-weight: 700;
 	font-size: 22px;
 	margin-bottom: 22px;
+	color: $color-white;
 	font-family: $title-article;
 }
 	/* Fim do BOX2*/
@@ -230,6 +241,58 @@ display: block;
 #main-news{
 	display: block;
 	margin:auto;
-	height: 600px; 
-	background-color: $color-light-gray;
+	min-height: 600px; 
+	background-color: $color-blue-river;
+	border-bottom: 1px solid $color-wood;
 }
+
+.titleNews{			
+	font-family: $title-section;
+	font-size: 48px;
+	font-weight: 600;
+	text-align: center;
+	margin:53px 0 59px 0;
+
+}
+
+//Posts
+
+.news{
+	
+	a{
+		text-decoration: none;
+		display: block;	
+		font-size:18px;
+		margin: 41.5px 0;
+		text-transform: uppercase; 
+		color:$color-white;
+	}
+}
+
+.icon{
+	display: block;
+	float: left;
+	margin-right: 10px;
+	background-image: url("../_images/20.png");
+	width: 20px;
+	height: 20px;
+	&:hover {
+		transform: rotate(45deg);
+		transition:1s;
+		
+	}
+}
+
+.news {
+
+	a:hover .icon{
+		transform: rotate(45deg);
+		transition:0.5s;
+	}
+
+	a:hover p{
+		color:black;
+	}
+}
+
+//Fim Posts
