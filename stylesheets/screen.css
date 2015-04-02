@@ -480,12 +480,12 @@ body {
 
 /* Variaveis de Cores */
 /* Variaveis de Fontes */
-/* line 25, ../sass/screen.scss */
+/* line 27, ../sass/screen.scss */
 body {
   font-family: 'Roboto Condensed', sans-serif;
 }
 
-/* line 29, ../sass/screen.scss */
+/* line 31, ../sass/screen.scss */
 #main-header {
   display: block;
   height: 606px;
@@ -496,7 +496,7 @@ body {
 }
 
 /* main-logo */
-/* line 39, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 #main-logo {
   display: block;
   width: 502px;
@@ -508,15 +508,16 @@ body {
   margin: 128px 0 148px 0;
 }
 
-/* line 50, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 .nav_menu {
   width: 100%;
   height: 100px;
-  background-color: #275b6c;
+  border-top: 1px solid #D7A36B;
+  background-color: #212121;
   display: block;
 }
 
-/* line 57, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 .menu1 {
   line-height: 100px;
   font-weight: 700;
@@ -526,23 +527,23 @@ body {
   color: #FFFFFF;
 }
 
-/* line 66, ../sass/screen.scss */
+/* line 69, ../sass/screen.scss */
 .menu2 {
   display: block;
   margin-left: 20px;
 }
-/* line 69, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 .menu2 li {
   display: block;
   float: left;
   position: relative;
   margin-left: 10px;
 }
-/* line 75, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
 .menu2 li:hover a {
   color: #D7A36B;
 }
-/* line 78, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 .menu2 li:hover:before {
   content: "";
   width: 50%;
@@ -552,7 +553,7 @@ body {
   left: 25%;
   bottom: 33px;
 }
-/* line 87, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 .menu2 li a {
   display: block;
   font-size: 18px;
@@ -563,7 +564,7 @@ body {
 }
 
 /* bt-social */
-/* line 100, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
 .botao {
   display: block;
   float: left;
@@ -575,14 +576,14 @@ body {
   /*  36 de altura em rela├º├úo ao nav e 10 de espa├ºo em cada um*/
   text-indent: -9999em;
 }
-/* line 110, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 .botao:hover {
   margin-top: 30px;
   transform: rotate(20deg);
   transition: 0.3s;
 }
 
-/* line 117, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 .botao2 {
   display: block;
   float: left;
@@ -594,14 +595,14 @@ body {
   /*  36 de altura em rela├º├úo ao nav e 10 de espa├ºo em cada um*/
   text-indent: -9999em;
 }
-/* line 127, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
 .botao2:hover {
   margin-top: 30px;
   transform: rotate(20deg);
   transition: 0.3s;
 }
 
-/* line 134, ../sass/screen.scss */
+/* line 137, ../sass/screen.scss */
 .linkedin {
   background-position: 0 0;
   /*Posicionamento da imagem no sprit */
@@ -609,45 +610,46 @@ body {
   /*Espa├ºamento do primeiro elemento com o menu2*/
 }
 
-/* line 139, ../sass/screen.scss */
+/* line 142, ../sass/screen.scss */
 .linkedin2 {
   background-position: 0 0;
 }
 
-/* line 143, ../sass/screen.scss */
+/* line 146, ../sass/screen.scss */
 .facebook {
   background-position: -36px 0;
   /*Sempre valores negativos nos eixos.*/
 }
 
-/* line 147, ../sass/screen.scss */
+/* line 150, ../sass/screen.scss */
 .github {
   background-position: -72px 0;
 }
 
-/* line 151, ../sass/screen.scss */
+/* line 154, ../sass/screen.scss */
 .twitter {
   background-position: -108px 0;
 }
 
 /* Fim Header*/
 /* SE├ç├âO SOBRE */
-/* line 158, ../sass/screen.scss */
+/* line 161, ../sass/screen.scss */
 #main-bio {
   display: block;
   background-color: #032B38;
   margin: auto;
-  min-height: 600px;
+  min-height: 500px;
   border-bottom: 1px solid #D7A36B;
 }
 
-/* line 166, ../sass/screen.scss */
+/* line 169, ../sass/screen.scss */
 .boxControladorBio {
-  min-height: 600px;
+  min-height: 510px;
+  padding-top: 90px;
 }
 
 /*HEADER INTERNO ~  Estiliza├º├úo T├¡tulo*/
-/* line 171, ../sass/screen.scss */
+/* line 175, ../sass/screen.scss */
 .titleBio {
   font-family: Open Sans;
   font-size: 48px;
@@ -658,7 +660,7 @@ body {
 }
 
 /*BOX 1 - SOBRE*/
-/* line 180, ../sass/screen.scss */
+/* line 184, ../sass/screen.scss */
 .box1 {
   display: block;
   float: left;
@@ -666,7 +668,7 @@ body {
 }
 
 /*Subtitulo*/
-/* line 186, ../sass/screen.scss */
+/* line 190, ../sass/screen.scss */
 .myName {
   display: block;
   width: 162px;
@@ -679,7 +681,7 @@ body {
 }
 
 /*Imagem*/
-/* line 197, ../sass/screen.scss */
+/* line 201, ../sass/screen.scss */
 .imageBio {
   display: block;
   width: 230px;
@@ -692,7 +694,7 @@ body {
 }
 
 /*Controle dos Bot├Áes*/
-/* line 208, ../sass/screen.scss */
+/* line 212, ../sass/screen.scss */
 .boxBotaos {
   margin-left: -20px;
   float: left;
@@ -700,7 +702,7 @@ body {
 
 /* Fim do BOX1*/
 /*BOX 2 - SOBRE*/
-/* line 214, ../sass/screen.scss */
+/* line 218, ../sass/screen.scss */
 .box2 {
   display: block;
   float: left;
@@ -708,7 +710,7 @@ body {
 }
 
 /*Estiliza├º├úo de Par├ígrafos*/
-/* line 220, ../sass/screen.scss */
+/* line 224, ../sass/screen.scss */
 .textBio {
   display: block;
   float: left;
@@ -719,7 +721,7 @@ body {
 }
 
 /*Estiliza├º├úo do Subtitulo*/
-/* line 229, ../sass/screen.scss */
+/* line 233, ../sass/screen.scss */
 .titleTextBio {
   text-transform: uppercase;
   font-weight: 700;
@@ -732,35 +734,48 @@ body {
 /* Fim do BOX2*/
 /*Fim do SOBRE*/
 /*  SE├ç├âO PROJETOS */
-/* line 241, ../sass/screen.scss */
+/* line 245, ../sass/screen.scss */
 #main-news {
   display: block;
   margin: auto;
-  min-height: 600px;
+  min-height: 515px;
   background-color: #467687;
   border-bottom: 1px solid #D7A36B;
 }
 
-/* line 249, ../sass/screen.scss */
+/* line 254, ../sass/screen.scss */
 .titleNews {
-  font-family: Open Sans;
+  font-family: Yanone Kaffeesatz;
   font-size: 48px;
   font-weight: 600;
   text-align: center;
   margin: 53px 0 59px 0;
+  text-transform: uppercase;
 }
 
-/* line 262, ../sass/screen.scss */
+/* line 266, ../sass/screen.scss */
 .news a {
   text-decoration: none;
   display: block;
-  font-size: 18px;
-  margin: 41.5px 0;
+  font-size: 20px;
+  margin-top: 20px;
   text-transform: uppercase;
   color: #FFFFFF;
+  font-family: PT Sans;
+}
+/* line 276, ../sass/screen.scss */
+.news a:hover .icon {
+  transform: rotate(45deg);
+  transition: 0.5s;
+}
+/* line 281, ../sass/screen.scss */
+.news a:hover p {
+  transition: 0.7s;
+  color: black;
+  text-transform: uppercase;
 }
 
-/* line 272, ../sass/screen.scss */
+/* line 289, ../sass/screen.scss */
 .icon {
   display: block;
   float: left;
@@ -769,18 +784,31 @@ body {
   width: 20px;
   height: 20px;
 }
-/* line 279, ../sass/screen.scss */
+/* line 296, ../sass/screen.scss */
 .icon:hover {
   transform: rotate(45deg);
   transition: 1s;
 }
 
-/* line 288, ../sass/screen.scss */
-.news a:hover .icon {
-  transform: rotate(45deg);
-  transition: 0.5s;
+/* line 308, ../sass/screen.scss */
+#main-footer {
+  display: block;
+  height: 160px;
+  background: #252222 url(../_images/main-footer3.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-/* line 293, ../sass/screen.scss */
-.news a:hover p {
-  color: black;
+
+/* line 316, ../sass/screen.scss */
+.boxBotaosRodape {
+  float: left;
+}
+
+/* line 320, ../sass/screen.scss */
+.rodape {
+  margin-top: 30px;
+  text-transform: uppercase;
+  color: #b9a832;
+  font-size: 18px;
+  font-family: 'Dosis', sans-serif;
 }

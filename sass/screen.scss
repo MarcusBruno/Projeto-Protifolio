@@ -14,6 +14,8 @@ $color-blue-light: 	#275b6c;
 $color-white:		#FFFFFF;
 $color-blue-river:  #467687;
 $color-wood: 		#D7A36B;
+$color-gold: #b9a832;
+$color-gray-fosco: #212121;
 
 /* Variaveis de Fontes */
 
@@ -50,7 +52,8 @@ display: block;
 .nav_menu{
 	width: 100%;
 	height: 100px;
-	background-color: $color-blue-light;
+	border-top: 1px solid $color-wood;
+	background-color: $color-gray-fosco;
 	display: block;
 }
 
@@ -159,12 +162,13 @@ display: block;
 	display: block;
 	background-color: $color-blue-dark;
 	margin:auto;
-	min-height: 600px;
+	min-height: 500px;
 	border-bottom: 1px solid $color-wood; 
 }
 
 .boxControladorBio{
-	min-height: 600px;
+	min-height: 510px;
+	padding-top: 90px;
 }
 
 	/*HEADER INTERNO ~  Estilização Título*/
@@ -241,31 +245,44 @@ display: block;
 #main-news{
 	display: block;
 	margin:auto;
-	min-height: 600px; 
+	min-height: 515px; 
 	background-color: $color-blue-river;
 	border-bottom: 1px solid $color-wood;
+
 }
 
 .titleNews{			
-	font-family: $title-section;
+	font-family:$title-article;
 	font-size: 48px;
 	font-weight: 600;
 	text-align: center;
 	margin:53px 0 59px 0;
-
+	text-transform: uppercase;
 }
 
 //Posts
 
 .news{
-	
-	a{
+	a {
 		text-decoration: none;
 		display: block;	
-		font-size:18px;
-		margin: 41.5px 0;
+		font-size:20px;
+		margin-top: 20px;
 		text-transform: uppercase; 
 		color:$color-white;
+		font-family:$text-paragraphs;
+		
+		
+		&:hover .icon{
+		transform: rotate(45deg);
+		transition:0.5s;
+		}
+
+		&:hover p{
+			transition:0.7s;
+			color:black;			
+			text-transform: uppercase;
+		}
 	}
 }
 
@@ -283,16 +300,28 @@ display: block;
 	}
 }
 
-.news {
-
-	a:hover .icon{
-		transform: rotate(45deg);
-		transition:0.5s;
-	}
-
-	a:hover p{
-		color:black;
-	}
-}
 
 //Fim Posts
+
+//Inicio do Rodapé
+
+#main-footer{
+	display: block;
+	height: 160px;
+	background: $color-gray url(../_images/main-footer3.jpg) no-repeat;
+	background-size:cover;
+	background-position:center;
+}
+
+.boxBotaosRodape{
+	float: left;
+}
+
+.rodape{
+	margin-top:30px;
+	text-transform: uppercase;
+	color:$color-gold;
+	font-size:18px;
+	font-family: 'Dosis', sans-serif;
+
+}
