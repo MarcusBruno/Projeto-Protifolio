@@ -33,7 +33,7 @@ display: block;
 	height: 606px;
 	background: $color-gray url(../_images/main-header.jpg) no-repeat;
 	background-size: cover;
-	border-bottom: 1px solid $color-wood;
+	border-bottom: 2px solid $color-wood;
 	overflow: hidden;
 }
 
@@ -49,10 +49,10 @@ display: block;
 	margin: 128px 0 148px 0;
 }
 
-.nav_menu{
+#nav_menu{
 	width: 100%;
-	height: 100px;
-	border-top: 1px solid $color-wood;
+	height: 102px;
+	border-top: 2px solid $color-wood;
 	background-color: $color-gray-fosco;
 	display: block;
 }
@@ -167,7 +167,7 @@ display: block;
 }
 
 .boxControladorBio{
-	min-height: 510px;
+	min-height: 470px;
 	padding-top: 90px;
 }
 
@@ -202,9 +202,7 @@ display: block;
 	display: block;
 	width: 230px;
 	height: 230px;
-	overflow: hidden; 
-	text-indent: -9999em;
-	margin:36px auto 46px auto;
+	margin:36px auto 0px auto;
 	background: url(../_images/main-sprite.png) no-repeat;
 	background-position: 0 -36px;
 }
@@ -241,27 +239,24 @@ display: block;
 	/* Fim do BOX2*/
 /*Fim do SOBRE*/
 
-/*  SEÇÃO PROJETOS */
-#main-news{
+/*  SEÇÃO POSTS*/
+#main-news{/*Container da Seção*/
 	display: block;
 	margin:auto;
-	min-height: 515px; 
+	min-height: 504px; 
 	background-color: $color-blue-river;
 	border-bottom: 1px solid $color-wood;
-
 }
-
+	/*Estilização do Título*/
 .titleNews{			
 	font-family:$title-article;
 	font-size: 48px;
-	font-weight: 600;
+	font-weight: 500;
 	text-align: center;
 	margin:53px 0 59px 0;
 	text-transform: uppercase;
 }
-
-//Posts
-
+	/*Estilização do comportamento dos links e paragrafos*/
 .news{
 	a {
 		text-decoration: none;
@@ -271,8 +266,7 @@ display: block;
 		text-transform: uppercase; 
 		color:$color-white;
 		font-family:$text-paragraphs;
-		
-		
+				
 		&:hover .icon{
 		transform: rotate(45deg);
 		transition:0.5s;
@@ -286,25 +280,19 @@ display: block;
 	}
 }
 
-.icon{
+/*Inicio do Rodape 'Footer'
+	/*Icone dos Links de Cada Post*/
+.icon{/*Imagem do Icone*/
 	display: block;
 	float: left;
-	margin-right: 10px;
-	background-image: url("../_images/20.png");
 	width: 20px;
 	height: 20px;
-	&:hover {
-		transform: rotate(45deg);
-		transition:1s;
-		
-	}
+	margin-right: 10px;	
+	background-image: url("../_images/20.png");
 }
-
-
-//Fim Posts
+	//Fim Posts
 
 //Inicio do Rodapé
-
 #main-footer{
 	display: block;
 	height: 160px;
@@ -312,16 +300,17 @@ display: block;
 	background-size:cover;
 	background-position:center;
 }
-
+	/*Caixa delimitadora dos Botões*/
 .boxBotaosRodape{
 	float: left;
+	margin:auto;
 }
-
+	/*Estilização do Nome no <footer>*/
 .rodape{
 	margin-top:30px;
 	text-transform: uppercase;
 	color:$color-gold;
 	font-size:18px;
 	font-family: 'Dosis', sans-serif;
-
 }
+	// Fim Footer

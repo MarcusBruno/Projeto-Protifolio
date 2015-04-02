@@ -491,7 +491,7 @@ body {
   height: 606px;
   background: #252222 url(../_images/main-header.jpg) no-repeat;
   background-size: cover;
-  border-bottom: 1px solid #D7A36B;
+  border-bottom: 2px solid #D7A36B;
   overflow: hidden;
 }
 
@@ -509,10 +509,10 @@ body {
 }
 
 /* line 52, ../sass/screen.scss */
-.nav_menu {
+#nav_menu {
   width: 100%;
-  height: 100px;
-  border-top: 1px solid #D7A36B;
+  height: 102px;
+  border-top: 2px solid #D7A36B;
   background-color: #212121;
   display: block;
 }
@@ -644,7 +644,7 @@ body {
 
 /* line 169, ../sass/screen.scss */
 .boxControladorBio {
-  min-height: 510px;
+  min-height: 470px;
   padding-top: 90px;
 }
 
@@ -686,15 +686,13 @@ body {
   display: block;
   width: 230px;
   height: 230px;
-  overflow: hidden;
-  text-indent: -9999em;
-  margin: 36px auto 46px auto;
+  margin: 36px auto 0px auto;
   background: url(../_images/main-sprite.png) no-repeat;
   background-position: 0 -36px;
 }
 
 /*Controle dos Bot├Áes*/
-/* line 212, ../sass/screen.scss */
+/* line 210, ../sass/screen.scss */
 .boxBotaos {
   margin-left: -20px;
   float: left;
@@ -702,7 +700,7 @@ body {
 
 /* Fim do BOX1*/
 /*BOX 2 - SOBRE*/
-/* line 218, ../sass/screen.scss */
+/* line 216, ../sass/screen.scss */
 .box2 {
   display: block;
   float: left;
@@ -710,7 +708,7 @@ body {
 }
 
 /*Estiliza├º├úo de Par├ígrafos*/
-/* line 224, ../sass/screen.scss */
+/* line 222, ../sass/screen.scss */
 .textBio {
   display: block;
   float: left;
@@ -721,7 +719,7 @@ body {
 }
 
 /*Estiliza├º├úo do Subtitulo*/
-/* line 233, ../sass/screen.scss */
+/* line 231, ../sass/screen.scss */
 .titleTextBio {
   text-transform: uppercase;
   font-weight: 700;
@@ -733,27 +731,30 @@ body {
 
 /* Fim do BOX2*/
 /*Fim do SOBRE*/
-/*  SE├ç├âO PROJETOS */
-/* line 245, ../sass/screen.scss */
+/*  SE├ç├âO POSTS*/
+/* line 243, ../sass/screen.scss */
 #main-news {
+  /*Container da Se├º├úo*/
   display: block;
   margin: auto;
-  min-height: 515px;
+  min-height: 504px;
   background-color: #467687;
   border-bottom: 1px solid #D7A36B;
 }
 
-/* line 254, ../sass/screen.scss */
+/*Estiliza├º├úo do T├¡tulo*/
+/* line 251, ../sass/screen.scss */
 .titleNews {
   font-family: Yanone Kaffeesatz;
   font-size: 48px;
-  font-weight: 600;
+  font-weight: 500;
   text-align: center;
   margin: 53px 0 59px 0;
   text-transform: uppercase;
 }
 
-/* line 266, ../sass/screen.scss */
+/*Estiliza├º├úo do comportamento dos links e paragrafos*/
+/* line 261, ../sass/screen.scss */
 .news a {
   text-decoration: none;
   display: block;
@@ -763,34 +764,32 @@ body {
   color: #FFFFFF;
   font-family: PT Sans;
 }
-/* line 276, ../sass/screen.scss */
+/* line 270, ../sass/screen.scss */
 .news a:hover .icon {
   transform: rotate(45deg);
   transition: 0.5s;
 }
-/* line 281, ../sass/screen.scss */
+/* line 275, ../sass/screen.scss */
 .news a:hover p {
   transition: 0.7s;
   color: black;
   text-transform: uppercase;
 }
 
-/* line 289, ../sass/screen.scss */
+/*Inicio do Rodape 'Footer'
+	/*Icone dos Links de Cada Post*/
+/* line 285, ../sass/screen.scss */
 .icon {
+  /*Imagem do Icone*/
   display: block;
   float: left;
-  margin-right: 10px;
-  background-image: url("../_images/20.png");
   width: 20px;
   height: 20px;
-}
-/* line 296, ../sass/screen.scss */
-.icon:hover {
-  transform: rotate(45deg);
-  transition: 1s;
+  margin-right: 10px;
+  background-image: url("../_images/20.png");
 }
 
-/* line 308, ../sass/screen.scss */
+/* line 296, ../sass/screen.scss */
 #main-footer {
   display: block;
   height: 160px;
@@ -799,12 +798,15 @@ body {
   background-position: center;
 }
 
-/* line 316, ../sass/screen.scss */
+/*Caixa delimitadora dos Bot├Áes*/
+/* line 304, ../sass/screen.scss */
 .boxBotaosRodape {
   float: left;
+  margin: auto;
 }
 
-/* line 320, ../sass/screen.scss */
+/*Estiliza├º├úo do Nome no <footer>*/
+/* line 309, ../sass/screen.scss */
 .rodape {
   margin-top: 30px;
   text-transform: uppercase;
